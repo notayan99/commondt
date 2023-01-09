@@ -41,6 +41,10 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl
 
 PRODUCT_PACKAGES += \
+    audioadsprpcd \
+    vendor.qti.audio-adsprpc-service.rc
+
+PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.primary.default \
     audio.r_submix.default \
