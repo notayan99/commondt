@@ -112,8 +112,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
 # Display
-$(call inherit-product-if-exists, vendor/qcom/opensource/commonsys/display/config/display-product-commonsys.mk)
-
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
