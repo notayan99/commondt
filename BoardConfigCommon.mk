@@ -9,7 +9,7 @@ COMMON_PATH := device/xiaomi/sm6115-common
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
-
+MALLOC_SVELTE := true
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -43,6 +43,10 @@ USE_CUSTOM_AUDIO_POLICY := 1
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := bengal
 TARGET_NO_BOOTLOADER := true
+
+#memecam
+# Inherit from proprietary files for miuicamera
+-include vendor/xiaomi/mojito-miuicamera/products/board.mk
 
 # Display
 TARGET_GRALLOC_HANDLE_HAS_NO_RESERVED_SIZE := true
@@ -93,9 +97,10 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 TARGET_KERNEL_VERSION := 4.19
 BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6115
-TARGET_KERNEL_CONFIG := vendor/bengal-perf_defconfig
+TARGET_KERNEL_CONFIG := vendor/chime_defconfig
 TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1 LLVM_IAS=1
-
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/nexus-clang
+TARGET_KERNEL_CLANG_VERSION := nexus
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
