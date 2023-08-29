@@ -444,7 +444,7 @@ vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
-# GPS (system) - from LA.QSSI.13.0.r1-09700-qssi.0
+# GPS
 system_ext/lib/liblocsdk_diag_jni.so|348da3412116041b55c84f3b7d9c8d470db299ff
 system_ext/lib64/liblocsdk_diag_jni.so|54e9eca36e38cedb16421ce82fb1fbfd3b05bef0
 system_ext/etc/permissions/com.qti.location.sdk.xml|fac5922b978d83a00cd9ec0ddcf2c5d7ab26d492
@@ -454,8 +454,6 @@ system_ext/etc/permissions/privapp-permissions-com.qualcomm.location.xml|0857ffd
 system_ext/framework/com.qti.location.sdk.jar|2331736566d7feb60af865408da911d0c8047458
 system_ext/priv-app/com.qualcomm.location/com.qualcomm.location.apk|061877f05e03df21c949bc4836e1700c80f2f9aa
 system_ext/priv-app/xtra_t_app/xtra_t_app.apk|28cc52eb9e7e1767bc3d60d962ae5c79540627db
-
-# GPS (vendor) - from LA.UM.9.15.2.r1-06600-KAMORTA.QSSI13.0
 vendor/bin/garden_app|987a4b0d1f2fc446e384f1d68b041819c8221d07
 vendor/bin/loc_launcher|f0b95b7d523d2785a3090c2598c4bbd6170f1ba1
 vendor/bin/lowi-server|f5d8543b09721b7a42f6d8e2cac6721856df2f3a
@@ -464,7 +462,7 @@ vendor/bin/slim_daemon|ca793600e5f73be75ed70022f4bc7d0c4ba491d3
 vendor/bin/xtra-daemon|307420cc97076c206cc646b99746740fe8efb5d2
 vendor/bin/xtwifi-client|fdf1f106754caf4d8d9e1098169b078071066694
 vendor/bin/xtwifi-inet-agent|4aabf2e71422b105a76a3064175b2399cb89fc4e
--vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
+vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
 vendor/etc/apdr.conf|52c9b4265e55c87ddf07c9b60817b3c09420712a
 vendor/etc/cacert_location.pem|0789bf799c7e45d352a83e2f79ddb0cea86db85b
 vendor/etc/izat.conf|c60fabc264a477e23a36018419271bab2de0a0f6
